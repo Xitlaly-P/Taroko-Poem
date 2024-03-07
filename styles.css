@@ -1,0 +1,22 @@
+/* <![CDATA[ */
+body {
+    background: rgb(46, 102, 232);
+    color: rgb(216, 202, 218);
+    margin: 0 24pt 0 24pt;
+    font-family: Optima, sans-serif;
+    font-size: 13pt;
+}
+div {
+    height: 16pt;
+}
+a {
+    color: #117;
+    text-decoration: none;
+}
+.right{
+    float:right;
+    margin-top:12px;
+    color:#0b3;
+    height:60pt
+}
+   /* ]]> */
