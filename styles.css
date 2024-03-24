@@ -20,12 +20,6 @@ a {
     color: #117;
     text-decoration: none;
 }
-/*.right{
-    float:right;
-    margin-top:12px;
-    color:#0b3;
-    height:60pt
-}*/
 .h1{
     text-align: center;
     font-size: 10vh;
@@ -37,4 +31,21 @@ a {
 #main{
     text-align: center;
 }
-   /* ]]> */
+
+.image {
+    max-width: 25vw;
+    min-height: 8vh;
+    max-height:300px;
+    position: absolute;
+
+}
+
+#left-images {
+    position: absolute;
+    left: 10px;
+}
+
+#right-images {
+    position: absolute;
+    right: 10px;
+}
