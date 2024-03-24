@@ -1,14 +1,14 @@
 var t=0;
 var n=0;
 var paths=0;
-var above='brow,mist,shape,layer,the crag,stone,forest,height'.split(',');
-var below='flow,basin,shape,vein,rippling,stone,cove,rock'.split(',');
-var trans='command,pace,roam,trail,frame,sweep,exercise,range'.split(',');
-var imper='track,shade,translate,stamp,progress through,direct,run,enter';
+var above='the sun,radiant,clear,high,bird,bright,sky,horizon'.split(',');
+var below='flow,water,sand,rock,seaweed,salt,ocean,breeze'.split(',');
+var trans='collect,pace,splash,dance,frame,sweep,explore,foam'.split(',');
+var imper='lay,endless,wave,walk,trace,relax,stroll,reflect';
 imper=imper.split(',');
 var intrans='linger,dwell,rest,relax,hold,dream,hum'.split(',');
 var s='s,'.split(',');
-var texture='rough,fine'.split(',');
+var texture='grainy,damp'.split(',');
 function rand_range(max) {
     return Math.floor(Math.random()*(max+1));
 }
@@ -18,8 +18,8 @@ function choose(array) {
 function path() {
     var p=rand_range(1);
     var words=choose(above);
-    if ((words=='forest')&&(rand_range(3)==1)) {
-        words='monkeys '+choose(trans);
+    if ((words=='horizon')&&(rand_range(3)==1)) {
+        words='fish '+choose(trans);
     } else {
         words+=s[p]+' '+choose(trans)+s[(p+1)%2];
     }
@@ -37,7 +37,7 @@ function site() {
     return words;
 }
 function cave() {
- var adjs=('encompassing,'+choose(texture)+',sinuous,straight,objective,arched,cool,clear,dim,driven').split(',');
+ var adjs=('encompassing,'+choose(texture)+',marvelous,serene,objective,glistening,cool,clear,luminous,tranquil').split(',');
  var target=1+rand_range(3);
  while (adjs.length>target) {
   adjs.splice(rand_range(adjs.length),1);
