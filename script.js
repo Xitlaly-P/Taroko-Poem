@@ -1,14 +1,14 @@
 var t = 0;
 var n = 0;
 var paths = 0;
-var above = 'the sun,radiant,clear,high,bird,bright,sky,horizon'.split(',');
-var below = 'flow,water,sand,rock,seaweed,salt,ocean,breeze'.split(',');
+var above = 'the sky,radiant,clear,high,bird,bright,sun,horizon'.split(',');
+var below = 'flow,water,sand,rock,seaweed,salt,ocean,breeze,grass'.split(',');
 var trans = 'collect,pace,splash,dance,frame,sweep,explore,foam'.split(',');
-var imper = 'lay,endless,wave,walk,trace,relax,stroll,reflect';
+var imper = 'lay,endless,wave,walk,trace,relax,stroll,reflect,reminisce';
 imper = imper.split(',');
-var intrans = 'linger,dwell,rest,relax,hold,dream,hum'.split(',');
+var intrans = 'linger,dwell,rest,relax,hold,dream,hum,remember'.split(',');
 var s = 's,'.split(',');
-var texture = 'grainy,damp'.split(',');
+var texture = 'grainy,damp,sweet'.split(',');
 
 var imageCount = 0;
 
@@ -44,7 +44,7 @@ function site() {
 }
 
 function cave() {
-    var adjs = ('encompassing,' + choose(texture) + ',marvelous,serene,objective,glistening,cool,clear,luminous,tranquil').split(',');
+    var adjs = ('encompassing,' + choose(texture) + ',marvelous,serene,glistening,cool,clear,luminous,tranquil,timeless').split(',');
     var target = 1 + rand_range(3);
     while (adjs.length > target) {
         adjs.splice(rand_range(adjs.length), 1);
